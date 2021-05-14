@@ -10,15 +10,13 @@ char help_information(void)
         "aixiao@aixiao.me",
     };
 
-    static const char usage[] = "Usage: [-?hpt] [-s signal] [-c filename]";
+    static const char usage[] = "Usage: [-?h] [-s signal] [-c filename]";
     static const char *s_help[] = {
         "",
         "Options:",
-        "    -?,-h       : help information",
-        "    -p          : process number, default 2 process",
-        "    -t          : timeout minute, default is no timeout",
-        "    -s signal   : send signal to a master process: stop, quit, restart, reload, status",
-        "    -c filename : set configuration file, default CProxy.ini",
+        "    -s --signal            : send signal to a master process: stop, quit, restart, reload, status",
+        "    -c --config            : set configuration file, default: CProxy.conf",
+        "    -? -h --? --help       : help information",
         "",
         0
     };
